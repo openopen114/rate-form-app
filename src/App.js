@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import RateForm from './RateForm/RateForm';
+import Footer from './Footer';
+
 import './App.css';
 
 
@@ -23,6 +25,9 @@ class App extends Component {
 
   		  {/*** Rate Form ***/}
         <RateForm {...rateFormData}></RateForm>
+
+
+        <Footer></Footer>
       </div>
     );
   }

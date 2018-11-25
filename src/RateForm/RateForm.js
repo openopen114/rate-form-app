@@ -32,7 +32,7 @@ class RateForm extends Component {
       <div className="rateFormContainer">
 
       	{/*** Form Header Information ***/}
-      	<HeaderInfo classData={CLASSDATA} setHeaderInfoData={this.setHeaderInfoData}></HeaderInfo>
+      	<HeaderInfo classData={CLASSDATA} setHeaderInfoData={this.setHeaderInfoData} ></HeaderInfo>
 
       	{/*** Question Body ***/}
       	<QuestionBody questionData={QUESTION} gradeData={GRADE} setRatedResult={this.setRatedResult}></QuestionBody>
