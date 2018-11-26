@@ -21,13 +21,14 @@ class App extends Component {
 
 
     return (
-      <div className="App"> 
-
-  		  {/*** Rate Form ***/}
+      <div className="App">         
+        <div className="bgImage"></div>
+        
+        {/*** Rate Form ***/}
         <RateForm {...rateFormData}></RateForm>
 
 
-        <Footer></Footer>
+        <Footer message="walsin"></Footer>
       </div>
     );
   }

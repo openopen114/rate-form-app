@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';  
 import { Radio } from 'antd';
-import { Icon } from 'antd';
 
 const RadioGroup = Radio.Group;
 

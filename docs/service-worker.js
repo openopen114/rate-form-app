@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/rate-form-app/precache-manifest.202e477e3b7a190a3e875784e7f25248.js"
+  "/rate-form-app/precache-manifest.a5009cb04bb1846c7ddecde5176411f2.js"
 );
 
 workbox.clientsClaim();

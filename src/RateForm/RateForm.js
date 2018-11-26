@@ -14,12 +14,12 @@ class RateForm extends Component {
 
 
   //set header information data to state
-  setHeaderInfoData = (headerInfoData) => { 
+  setHeaderInfoData = (headerInfoData) => {  
     this.setState({headerInfoData});
   }
 
   //set rate result data to state
-  setRatedResult = (ratedData) => { 
+  setRatedResult = (ratedData) => {  
     this.setState({ratedData});
   }
 

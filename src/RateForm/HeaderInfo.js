@@ -49,7 +49,8 @@ class HeaderInfo extends PureComponent {
 					</Select> 
 
 					{/* empty waring icon */}
-					{this.state.classNameSelected =='' && <Icon type="info-circle" style={{color:'#FF0000',marginLeft:'8px'}}/>}
+					{this.state.classNameSelected === '' && <Icon type="info-circle" style={{color:'#FF0000',marginLeft:'8px'}}/>}
+
 
 				</div>
 
@@ -66,7 +67,7 @@ class HeaderInfo extends PureComponent {
 					<Input placeholder="User Name"  onChange={e => this.setState({'userName':e.target.value})} />
 
 					{/* empty waring icon*/}
-					{this.state.userName =='' && <Icon type="info-circle" style={{color:'#FF0000',marginLeft:'8px'}}/>}
+					{this.state.userName === '' && <Icon type="info-circle" style={{color:'#FF0000',marginLeft:'8px'}}/>}
 				</div>
 			</div>
 		);

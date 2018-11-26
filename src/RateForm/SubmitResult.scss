@@ -1,12 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
+
+
 .submitResultContainer{
 	
 	margin-top: 8px;
 	background-color: #fff;
 	border-radius: 5px;
+	width: 100%;
+
+
+	.resultPresentArea{
+		display:inline-flex;
+		flex-wrap:nowrap;   
+		justify-content:space-between;
+		
+		width: 100%;
+		div{
+			width:100%; 
+			padding: 8px 8px;
+
+			&:nth-child(2){ 
+				display:flex;
+				align-content:center;
+				justify-content:flex-end;
+				span{
+					color:#262626;
+					font-size: 20px;
+					font-family: 'Josefin Sans', sans-serif; 
+				}
+				h1{
+					color:#f5222d;
+					font-size: 100px;
+					font-family: 'Josefin Sans', sans-serif; 
+				}
+				 
+			}
+		}
+	}
 	
 
 	.ant-card-bordered{
 		border-radius: 10px;
 	}
+
+
 
 }

@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';  
 import Rater from './Rater';
-import { Icon, Button, Divider } from 'antd'; 
+import { Icon, Button, Divider, Tooltip } from 'antd'; 
 import './QuestionBody.scss';
 
 
@@ -34,9 +34,7 @@ class QuestionBody extends PureComponent {
 	isRatedFinish(){
 		let numOfQuestion = Object.keys(this.props.questionData).length;
 		let numOfRated = Object.keys(this.state).length;
-		let result = (numOfRated == numOfQuestion) ? true : false;
-		console.log('result');	
-		console.log(result);
+		let result = (numOfRated === numOfQuestion) ? true : false; 
 		return result;
 	}
 
@@ -81,7 +79,13 @@ class QuestionBody extends PureComponent {
 								{/* question & empty waring icon */}
 								<h3>
 									Q{i+1} : {item} 
-									{ this.state[item] == undefined && <Icon type="info-circle" style={{color:'#FF0000',marginLeft:'8px'}}/> }
+									
+									{ 
+										this.state[item] === undefined && 
+										<Tooltip placement="topLeft" title="請給分(シ_ _)シ" arrowPointAtCenter>
+									      <Icon type="info-circle" style={{color:'#FF0000',marginLeft:'8px'}}/>
+									    </Tooltip>
+									}
 								</h3>
 								<Rater {...this.props} setRate={this.setRate} question={item}></Rater>							
 							</div>
